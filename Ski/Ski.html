@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+	<title>Ski & Snowboarding School</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header class="header" id="home">
+		<div class="header__top">
+			<img src="images/logo.png" class="logo header_logo">
+			<nav class="menu header_menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#home" onclick="slowScroll('#home')">Home</a></li>
+					<li class="menu__item"><a href="#offer-area" onclick="slowScroll('#offer-area')">What We Offer</a></li>
+					<li class="menu__item"><a href="#gallery" onclick="slowScroll('#gallery')">Gallery</a></li>
+					<li class="menu__item"><a href="#about" onclick="slowScroll('#about')">About Us</a></li>
+					<li class="menu__item"><a href="#slider" onclick="slowScroll('#slider')">Testimonials</a></li>
+					<li class="menu__item"><a href="#contacts" onclick="slowScroll('#contacts')">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header__center">
+			<p class="caption header_caption">The countdown to ski season has begun! So, it is high<br>
+	time to improve your skills to have maximum fun this winter</p>
+			<button class="button header_button">ONLINE BOOKING</button>
+		</div>
+	</header> 
+	<div class="offer-area" id="offer-area">
+		<h1 class="title offer-area_title">WHAT WE OFFER</h1>
+		<p class="caption offer-area_caption">Skiing and snowboarding still rank among the undisputed winter sport highlights for all ages and ability levels. The perfectly groomed ski slopes makes a real heaven for skiers and riders. Our professional ski and snowboard instructors can show you all the little details while improving your skiing techniques and riding skills.</p>
+		<div class="offers">
+			<div class="offer-card offer-card_medium">
+				<div class="offer-card__img"><img src="images/offer-card_img1.png"></div>
+				<p class="offer-card__question">New to skiing?</p>
+				<p class="offer-card__description">Private lessons for beginners</p>
+				<button class="button offer-card_button">From $250</button>
+			</div>
+			<div class="offer-card offer-card_medium">
+				<div class="offer-card__img"><img src="images/offer-card_img2.png"></div>
+				<p class="offer-card__question">Need a crew?</p>
+				<p class="offer-card__description">Group lessons for begginers</p>
+				<button class="button offer-card_button">From $150</button>
+			</div>
+			<div class="offer-card offer-card_medium">
+				<div class="offer-card__img"><img src="images/offer-card_img3.png"></div>
+				<p class="offer-card__question">Wanna more?</p>
+				<p class="offer-card__description">Advanced group lessons</p>
+				<button class="button offer-card_button">From $450</button>
+			</div>
+		</div>
+	</div>
+	<div class="gallery" id="gallery">
+		<img src="images/gallery-pic-1.png" class="pic1">
+		<img src="images/gallery-pic-2.png" class="pic2">
+		<img src="images/gallery-pic-3.png" class="pic3">
+		<img src="images/gallery-pic-4.png" class="pic4">
+		<img src="images/gallery-pic-5.png" class="pic5">
+		<img src="images/gallery-pic-6.png" class="pic6">
+		<img src="images/gallery-pic-7.png" class="pic7">
+	</div>
+	<div class="crew">
+		<h1 class="title crew_title">Meet our crew</h1>
+		<div class="persons">
+			<div class="person">
+				<div class="person__img"> <img src="images/crew-img1.png"></div>
+				<p class="person__status">Instructor</p>
+				<p class="person__name">Jamie Garcia</p>
+			</div>
+			<div class="person">
+				<div class="person__img"><img src="images/crew-img2.png"></div>
+				<p class="person__status">Instructor</p>
+				<p class="person__name">James Billings</p>
+			</div>
+			<div class="person">
+				<div class="person__img"><img src="images/crew-img3.png"></div>
+				<p class="person__status">Instructor</p>
+				<p class="person__name">Peter Colins</p>
+			</div>
+			<div class="person">
+				<div class="person__img"><img src="images/crew-img4.png"></div>
+				<p class="person__status">Instructor</p>
+				<p class="person__name">Amanda Lee</p>
+			</div>
+		</div>
+	</div>
+	<div class="about" id="about">
+		<h1 class="title about_title">MOUNTAIN<br>SNOWBOARD SCHOOL</h1>
+		<p class="about__description">We’re not saying Snow Mountain has special powers, but a lot of magical things do happen here. The slopes on Bald and Dollar mountains enjoy a nearly lift line–free existence all winter long, not to mention a nearly cloud-free one.<br>
+To those who wish to experience the best holiday time ever, we are excited to offer unlimited fun on the slopes, homey cosiness, wonderful views and snow activities. All this selection is presented in a great variety for any taste, age and skill. We are looking forward to seeing you in Snow Mountain ski resort at new season!</p>
+		<div class="advantages">
+			<div class="advantages__item">
+				<p class="advantages__value">1600</p>
+				<p class="advantages__description">HAPPY CLIENTS</p>
+			</div>
+			<div class="advantages__item">
+				<p class="advantages__value">18</p>
+				<p class="advantages__description">PROFESSIONAL AWARDS</p>
+			</div>
+			<div class="advantages__item">
+				<p class="advantages__value">213</p>
+				<p class="advantages__description">REACHED TOPS</p>
+			</div>
+		</div>
+	</div>
+	<div class="slider" id="slider">
+		<h1 class="title slider_title">TESTIMONIALS</h1>
+		<div class="slider__img"><img src="images/slider-img.png"></div>
+		<div class="slides">
+			<div class="slide">
+				<p class="slider__name">Alexa Smith</p>
+				<p class="slider__caption">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+			</div>
+			<div class="slide">
+				<p class="slider__name">SAM SMITH</p>
+				<p class="slider__caption">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+			</div>
+			<div class="slide">
+				<p class="slider__name">ALEX MARTIN</p>
+				<p class="slider__caption">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+			</div>
+			<div class="slide">
+				<p class="slider__name">ALEX SMITH</p>
+				<p class="slider__caption">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+			</div>
+			<div class="slide">
+				<p class="slider__name">SAM SMITH</p>
+				<p class="slider__caption">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+			</div>
+		</div>
+		<div class="navigation">
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="contacts" id="contacts">
+			<h1 class="title contacts_title">Contact us</h1>
+			<div class="contacts__phone">+43 662 123456</div>
+			<div class="contacts__adress">Paracelsusstraße 26, 5020<br>Salzburg, Austria</div>
+			<div class="contacts__mail">INBOX@MOUNTain.COM</div>
+			<div class="contacts__hours">OPEN HOURS: 8.00 AM – 10.00<br>PM MONDAY - SUNDAY</div>
+			<div class="social">
+				<a href="https://www.twitter.com" target="_blank" class="social__twitter"><img src="images/social__twitter.png"></a>
+				<a href="https://www.facebook.com" target="_blank" class="social__facebook"><img src="images/social__facebook.png"></a>
+				<a href="https://www.instagram.com" target="_blank" class="social__instagram"><img src="images/social__instagram.png"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

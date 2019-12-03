@@ -1,0 +1,422 @@
+@font-face {
+	font-family: "Catamaran-Black";
+	src: url("fonts/Catamaran-Black.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: "Catamaran-Bold";
+	src: url("fonts/Catamaran-Bold.ttf");
+	font-style: bold;
+}
+@font-face {
+	font-family: "Muli-light";
+	src: url("fonts/Muli-light.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: "Muli-SemiBold";
+	src: url("fonts/Muli-SemiBold.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: "Muli-Bold";
+	src: url("fonts/Muli-Bold.ttf");
+	font-style: bold;
+}
+@font-face {
+	font-family: "Muli-Regular";
+	src: url("fonts/Muli-Regular.ttf");
+	font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f7f7f7;
+}
+.title {
+	font-family: Catamaran-Black;
+	font-size: 60px;
+	letter-spacing: 0.01em;
+	color: #333333;
+	text-align: center;
+	text-transform: uppercase;
+}
+/*-------------------------------------------Header--------------------------------------------------------*/
+.header {
+	background: url("images/header_background.png") no-repeat center;
+	min-height: 1080px;
+	display: flex;
+	flex-direction: column;
+}
+.header__top {
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 34px;
+	padding: 0 6%;
+}
+.header__center {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0 16.66%;
+}
+.header_logo {
+	max-width: 225px;
+	max-height: 83px;
+}
+.header_menu {
+	width: 689px;
+}
+.menu__list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+.menu__item, .menu__item a {
+	font-family: "Muli-Bold";
+	font-size: 16px;
+	line-height: 90px;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 0.01em;
+	text-decoration: none;
+}
+.header_caption {
+	font-family: Muli-Regular;
+	font-size: 24px;
+	line-height: 36px;
+	color: white;
+	width: 53%;
+	margin-bottom: 56px;
+	margin-top: 10%;
+}
+.button {
+	font-family: Catamaran-Bold;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.header_button {
+	font-size: 18px;
+	background: #ff690f;
+	width: 240px;
+  	height: 60px;
+}
+/*-------------------------------------------Offer--------------------------------------------------------*/
+.offer-area {
+	display: flex;
+	flex-direction: column;
+	padding: 0 16.66%;
+	padding-bottom: 160px;
+}
+.offer-area_title {
+	line-height: 90px;
+	padding-bottom: 49px;
+}
+.offer-area_caption {
+	font-family: Muli-light;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: 0.01em;
+	color: #565656;
+	text-align: center;
+	padding: 0px 195px 29px 135px;
+}
+.offers {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 17px;
+}
+.offer-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.offer-card_medium {
+	max-width: 237px;
+	height: 388px;
+}
+.offer-card__img {
+	padding-bottom: 34px;
+	min-height: 186px;
+}
+.offer-card__question {
+	text-transform: uppercase;
+	font-family: Muli-light;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+	color: #565656;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.offer-card__description {
+	text-transform: uppercase;
+	font-family: Catamaran-Black;
+	font-size: 24px;
+	letter-spacing: 0.01em;
+	color: #333333;
+	text-align: center;
+	padding-bottom: 31px;
+	line-height: 1.2;
+}
+.offer-card_button {
+	font-size: 15px;
+	background: #ff660d;
+	width: 120px;
+  	height: 50px;
+}
+/*-------------------------------------------Galley--------------------------------------------------------*/
+.gallery {
+	height: 1264px;
+	overflow: hidden;
+	display: grid;
+	grid-template-areas: "pic1 pic2 pic3"
+						 "pic4 pic5 pic3"
+						 "pic4 pic6 pic7";
+}
+.pic1 {
+	grid-area: pic1;
+}
+.pic2 {
+	grid-area: pic2;
+}
+.pic3 {
+	grid-area: pic3;
+}
+.pic4 {
+	grid-area: pic4;
+}
+.pic5 {
+	grid-area: pic5;
+}
+.pic6 {
+	grid-area: pic6;
+}
+.pic7 {
+	grid-area: pic7;
+	margin-top: -70px;
+}
+/*-------------------------------------------Crew--------------------------------------------------------*/
+.crew {
+	padding: 160px 16.66% 168px 16.66%;
+	display: flex;
+	flex-direction: column;
+}
+.persons {
+	display: flex;
+	justify-content: space-between;
+}
+.crew_title {
+	line-height: 90px;
+	padding-bottom: 64px;
+}
+.person {
+	display: flex;
+	flex-direction: column;
+}
+.person__img {
+	border-radius: 50%;
+	width: 240px;
+	height: 240px;
+	overflow: hidden;
+	margin-bottom: 33px;
+}
+.person__status {
+	font-family: Muli-light;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+	color: #565656;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.person__name {
+	font-family: Catamaran-Black;
+	font-size: 24px;
+	letter-spacing: 0.01em;
+	color: #333333;
+	text-align: center;
+	text-transform: uppercase;
+}
+/*-------------------------------------------About--------------------------------------------------------*/
+.about {
+	background: url("images/about-background.png") no-repeat;
+	height: 1080px;
+	padding: 0px 16.66% 0px 16.66%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.about_title {
+	color: #2f2f2f;
+	text-align: left;
+	line-height: 1.2;
+}
+.about__description {
+	font-family: Muli-light;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: 0.01em;
+	color: #2b2b2b;
+	text-align: left;
+	line-height: 1.778;
+	width: 65%;
+	padding-bottom: 74px;
+}
+/*-------------------------------------------Advantages--------------------------------------------------------*/
+.advantages {
+	display: flex;
+	justify-content: space-between;
+	width: 65%;
+}
+.advantages__value {
+	font-family: Catamaran-Black;
+	font-size: 64px;
+	line-height: 24px;
+	color: #ff660d;
+	line-height: 0.375;
+	padding-bottom: 28px;
+}
+.advantages__description {
+	font-family: Muli-SemiBold;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	color: #2b2b2b;
+	line-height: 0.375;
+}
+/*-------------------------------------------Slider--------------------------------------------------------*/
+.slider {
+	overflow:hidden;
+	position:relative;
+	width:800px;
+	margin: 162px auto 162px auto;
+}
+.slides {
+	position:relative;
+	transition:1s;
+}
+.slide {
+	float: left;
+	display:block;
+	width: 800px;
+	height: 100%;
+}
+.slider_title {
+	line-height: 90px;
+}
+.slider__img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	height: 140px;
+}
+.slider__img::before {
+	align-self: flex-end;
+	content: "";
+	background: url("images/slider-img-left.png") no-repeat;
+	width: 50px;
+	height: 36px;
+}
+.slider__img::after {
+	align-self: flex-end;
+	content: "";
+	background: url("images/slider-img-right.png") no-repeat;
+	width: 50px;
+	height: 36px;
+}
+.slider__name {
+	font-family: Catamaran-Black;
+	font-size: 18px;
+	color: #333333;
+	letter-spacing: 0.01em;
+	text-align: center;
+	text-transform: uppercase;
+  	line-height: 1.2;
+  	margin-bottom: 32px;
+}
+.slider__caption {
+	font-family: Muli-light;
+	font-size: 18px;
+	line-height: 1.778;
+	color: #565656;
+	letter-spacing: 0.01em;
+	text-align: center;
+	margin: 0 auto;
+}
+.navigation {
+	text-align: center;
+}
+.navigation__dots {
+	display: inline-flex;
+	border-radius: 50%;
+	width: 13px;
+  	height: 13px;
+  	background: #d1d8df;
+  	margin: 45px 7px 0px 7px;
+  	cursor:pointer;
+}
+.navigation__dots_active {
+	background: #ff630b;
+}
+/*-------------------------------------------Footer--------------------------------------------------------*/
+.footer {
+	display: flex;
+	background: url("images/map.png") no-repeat right -230px center;
+	height: 639px;
+	margin-top: 162px;
+}
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #2f2f2f;
+	padding: 0px 140px 0px 6%;
+	font-family: Muli-light;
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #f7f7f7;
+}
+.contacts_title {
+	color: #ffffff;
+	text-align: left;
+  	line-height: 1.2;
+  	margin-bottom: 55px;
+  	white-space: nowrap;
+}
+.contacts__phone {
+	padding: 20px 0px 20px 44px;
+	background: url("images/contacts__phone.png") no-repeat left center;
+	cursor: pointer;
+}
+.contacts__adress {
+	padding: 20px 0px 20px 44px;
+	background: url("images/contacts__adress.png") no-repeat left center;
+	cursor: pointer;
+}
+.contacts__mail {
+	padding: 20px 0px 20px 44px;
+	background: url("images/contacts__mail.png") no-repeat left center;
+	cursor: pointer;
+}
+.contacts__hours {
+	padding: 20px 0px 20px 44px;
+	background: url("images/contacts__hours.png") no-repeat left center;
+	cursor: pointer;
+}
+.social {
+	opacity: 0.5;
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	padding-top: 70px;
+}
