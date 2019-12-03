@@ -14,8 +14,7 @@ body {
   padding: 0 22%; }
 
 .header {
-  background-color: #eb4f4e;
-  height: 1700px; }
+  background-color: #eb4f4e; }
   .header-top {
     display: -webkit-box;
     display: -webkit-flex;
@@ -91,16 +90,17 @@ body {
   font-family: "bariol_regular";
   color: #fff;
   font-size: 60px;
-  line-height: 24px;
   letter-spacing: 0.15em;
-  padding: 60px 0 28px 0; }
+  padding: 60px 0 28px 0;
+  text-align: center; }
 
 .sub-title {
   font-family: "bariol_regular";
   color: #fff;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0.06em; }
+  letter-spacing: 0.06em;
+  text-align: center; }
 
 @media screen and (max-width: 765px) {
   .wrapper {
@@ -118,7 +118,7 @@ body {
     font-size: 18px;
     line-height: 40px;
     width: 100%;
-    background-color: #000;
+    background-color: #d73b3a;
     -webkit-transition: all 0.75s;
     -o-transition: all 0.75s;
     transition: all 0.75s; }
@@ -157,12 +157,10 @@ body {
       -webkit-align-self: center;
           -ms-flex-item-align: center;
               align-self: center;
-      width: 95%;
       opacity: 0;
       visibility: hidden;
       margin-right: 0px; }
       .menu__item a {
-        width: 95%;
         text-align: center;
         -webkit-align-self: center;
             -ms-flex-item-align: center;
