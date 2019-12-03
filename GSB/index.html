@@ -8,34 +8,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<section class="header">
-		<div class="header-top">
-			<div class="logo">
-				<img src="img/logo.png" alt="logo">
+	<header class="header">
+		<div class="logo header--logo">
+			<img src="img/logo.png" alt="logo">
+			<div id="hamburger_button" class="hamburger_button">
+				<span class="hamburger_button__first-line"> </span>
+				<span class="hamburger_button__middle-line"> </span>
+				<span class="hamburger_button__middle-line"> </span>
+				<span class="hamburger_button__last-line"> </span>
 			</div>
-			<nav class="menu">
-				<input type="checkbox" id="checkbox-menu">
-				<label for="checkbox-menu">
-					<ul class="menu__list touch">
-						<li class="menu__item"><a href="#">Home</a></li>
-						<li class="menu__item"><a href="#">About</a></li>
-						<li class="menu__item"><a href="#">Team</a></li>
-						<li class="menu__item"><a href="#">Portfolio</a></li>
-						<li class="menu__item"><a href="#">Other</a></li>
-						<li class="menu__item"><a href="#">Contact</a></li>
-					</ul>
-					<span class="toggle">☰</span>
-				</label>
-			</nav>
 		</div>
-		<div class="header-middle">
-			<h1 class="title">Welcome to Motion</h1>
-			<p class="sub-title">Asmart & Creative Single Page Template</p>
-		</div>
-		<div class="slider">
+		<nav class="menu header--menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#">Home</a></li>
+				<li class="menu__item"><a href="#">About</a></li>
+				<li class="menu__item"><a href="#">Team</a></li>
+				<li class="menu__item"><a href="#">Portfolio</a></li>
+				<li class="menu__item"><a href="#">Other</a></li>
+				<li class="menu__item"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="banner">
+		<h1 class="title banner--title">Welcome to Motion</h1>
+		<p class="sub-title banner--sub-title">Asmart & Creative Single Page Template</p>
+		<div class="slider"></div>
+	</div>
 			
-		</div>
-	</section>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
