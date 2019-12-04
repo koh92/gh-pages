@@ -7,3 +7,16 @@ $(function(){
        });
     });
 });
+
+$(document).ready(function(){
+	$('.slick-slider').slick({
+		infinite: true,
+  		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		centerMode: true, 
+		centerPadding: '0px',
+		prevArrow: $('.prev'),
+ 		nextArrow: $('.next')
+	})
+});
