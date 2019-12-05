@@ -16,7 +16,7 @@ $(document).ready(function(){
 		infinite: true,
 		centerMode: true, 
 		centerPadding: '0px',
-		prevArrow: $('.prev'),
- 		nextArrow: $('.next')
+		prevArrow: $('.slider__prev-arrow'),
+ 		nextArrow: $('.slider__next-arrow')
 	})
 });
