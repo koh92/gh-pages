@@ -458,9 +458,8 @@ body {
 .person {
   background-color: #fff;
   margin-right: 17px;
+  padding-top: 25px;
   border-radius: 5px;
-  width: 226px;
-  height: 342px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -484,13 +483,55 @@ body {
             box-sizing: border-box;
     border-radius: 50%;
     border: solid 10px #6cc372;
-    -webkit-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.15), inset 0px 1px 1px 0px rgba(0, 0, 0, 0.4);
-            box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.15), inset 0px 1px 1px 0px rgba(0, 0, 0, 0.4);
-    background-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(255, 255, 255, 0)));
-    background-image: -o-linear-gradient(left, black 0%, rgba(255, 255, 255, 0) 100%);
-    background-image: linear-gradient(90deg, black 0%, rgba(255, 255, 255, 0) 100%);
     width: 164px;
     height: 164px; }
+    .person__photo img {
+      margin-left: -1px; }
+  .person__name {
+    font-family: bariol_regular;
+    color: #61af66;
+    font-size: 25px;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    padding-top: 22px; }
+  .person__status {
+    font-family: bariol_regular;
+    color: #e74c3c;
+    font-size: 18px;
+    text-align: center;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    padding-top: 15px;
+    font-weight: bold; }
+  .person__button {
+    margin: 22px 12px 12px 12px;
+    outline: none;
+    border: none;
+    padding: 9px 64px 8px 62px;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    background: #6cc372 url("../img/twitter-icon.png") no-repeat 12px; }
+
+.portfolio {
+  background-color: #f0f0f0; }
+  .portfolio--title {
+    font-family: bariol_regular;
+    color: #616161;
+    font-size: 40px;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.16em;
+    padding-top: 44px; }
+  .portfolio--sub-title {
+    font-family: bariol_regular;
+    color: #61af66;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    padding-top: 20px; }
 
 @media screen and (max-width: 765px) {
   .wrapper {
