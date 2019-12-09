@@ -5,20 +5,23 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"/> -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header class="header">
-		<div class="logo header--logo">
+		<div class="logo">
 			<img src="img/logo.png" alt="logo">
-			<div id="hamburger_button" class="hamburger_button">
-				<span class="hamburger_button__first-line"> </span>
-				<span class="hamburger_button__middle-line"> </span>
-				<span class="hamburger_button__middle-line"> </span>
-				<span class="hamburger_button__last-line"> </span>
+			<div id="hamburger-button" class="hamburger-button">
+				<span class="hamburger-button__first-line"> </span>
+				<span class="hamburger-button__middle-line"> </span>
+				<span class="hamburger-button__middle-line"> </span>
+				<span class="hamburger-button__last-line"> </span>
 			</div>
 		</div>
-		<nav class="menu header--menu">
+		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__item"><a href="#">Home</a></li>
 				<li class="menu__item"><a href="#">About</a></li>
@@ -30,10 +33,12 @@
 		</nav>
 	</header>
 	<div class="banner">
-		<h1 class="title banner--title">Welcome to Motion</h1>
-		<p class="sub-title banner--sub-title">Asmart & Creative Single Page Template</p>
+		<h1 class="title banner__title">Welcome to Motion</h1>
+		<p class="sub-title banner__sub-title">Asmart & Creative Single Page Template</p>
 		<div class="slider">
-			<div><img class="slider__prev-arrow" src="img/prev-arrow.png"></div>
+			<div>
+				<img class="slider__prev-arrow" src="img/prev-arrow.png">
+			</div>
 			<div class="slider__slides">
 				<div class="slick-slider">
 					<div class="slick-slider__slide"><img src="img/slide2.png" alt=""></div>
@@ -41,65 +46,77 @@
 					<div class="slick-slider__slide"><img src="img/slide3.png" alt=""></div>
 				</div>
 			</div>
-			<div><img class="slider__next-arrow" src="img/next-arrow.png"></div>
+			<div>
+				<img class="slider__next-arrow" src="img/next-arrow.png">
+			</div>
 		</div>
 	</div>
 	<div class="merits">
-		<h1 class="title merits--title">Smart & Creative</h1>
-		<p class="sub-title merits--sub-title">This is you will use :)</p>
-		<div class="merits__container">
-			<div class="merit">
-				<div class="merit__icon"><img src="img/multi-ico.png" alt=""></div>
-				<div class="merit__name">Multi purpose</div>
-				<div class="merit__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+		<h2 class="title merits__title">Smart & Creative</h2>
+		<p class="sub-title merits__sub-title">This is you will use :)</p>
+		<ul>
+			<div class="merits__container">
+				<li>
+					<div class="merit">
+						<div class="merit__icon"><img src="img/multi-ico.png" alt=""></div>
+						<div class="merit__name">Multi purpose</div>
+						<div class="merit__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+					</div>
+				</li>
+				<li>
+				<div class="merit">
+					<div class="merit__icon"><img src="img/Flat-ico.png" alt=""></div>
+					<div class="merit__name">Flat UI</div>
+					<div class="merit__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+				</div>
+				</li>
+				<li>
+				<div class="merit">
+					<div class="merit__icon"><img src="img/creative-ico.png" alt=""></div>
+					<div class="merit__name">Creative Design</div>
+					<div class="merit__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+				</div>
+				</li>
 			</div>
-			<div class="merit">
-				<div class="merit__icon"><img src="img/Flat-ico.png" alt=""></div>
-				<div class="merit__name">Flat UI</div>
-				<div class="merit__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-			</div>
-			<div class="merit">
-				<div class="merit__icon"><img src="img/creative-ico.png" alt=""></div>
-				<div class="merit__name">Creative Design</div>
-				<div class="merit__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-			</div>
-		</div>
+		</ul>
 	</div>
 	<div class="team">
-		<h1 class="title team--title">Talented & Experts</h1>
-		<p class="sub-title team--sub-title">This is our team :)</p>
-		<div class="team__container">
-			<div class="person">
+		<h2 class="title team__title">Talented & Experts</h2>
+		<p class="sub-title team__sub-title">This is our team :)</p>
+		<ul class="team__container">
+			<li class="person">
 				<div class="person__photo"><img src="img/person-1.png" alt=""></div>
 				<div class="person__name">Mahmoud Baghagho</div>
 				<div class="person__status">Senior UI Designer</div>
-				<button class="person__button">Follow</button>
-			</div>
-			<div class="person">
+				<button class="person__button"><a href="#">Follow</a></button>
+			</li>
+			<li class="person">
 				<div class="person__photo"><img src="img/person-2.png" alt=""></div>
 				<div class="person__name">Abd ElRahman </div>
 				<div class="person__status">Senior App Developer</div>
-				<button class="person__button">Follow</button>
-			</div>
-			<div class="person">
+				<button class="person__button"><a href="#">Follow</a></button>
+			</li>
+			<li class="person">
 				<div class="person__photo"><img src="img/person-3.png" alt=""></div>
 				<div class="person__name">Mostafa Amin</div>
 				<div class="person__status">Senior Graphic Designer</div>
-				<button class="person__button">Follow</button>
-			</div>
-			<div class="person">
+				<button class="person__button"><a href="#">Follow</a></button>
+			</li>
+			<li class="person">
 				<div class="person__photo"><img src="img/person-4.png" alt=""></div>
 				<div class="person__name">Ahmed Ali</div>
 				<div class="person__status">Senior Web Developer</div>
-				<button class="person__button">Follow</button>
-			</div>
-		</div>
+				<button class="person__button"><a href="#">Follow</a></button>
+			</li>
+		</ul>
 	</div>
 	<div class="portfolio">
-		<h1 class="title portfolio--title">Elegant & Genuine</h1>
-		<p class="sub-title portfolio--sub-title">This is how our works looks like :)</p>
+		<h2 class="title portfolio__title">Elegant & Genuine</h2>
+		<p class="sub-title portfolio__sub-title">This is how our works looks like :)</p>
 		<div class="slider">
-			<div><img class="slider__prev-arrow" src="img/prev-arrow-green.png"></div>
+			<div>
+				<img class="slider__prev-arrow-green" src="img/prev-arrow-green.png">
+			</div>
 			<div class="slider__slides">
 				<div class="slick-slider-2">
 					<div class="slick-slider__slide">
@@ -120,11 +137,13 @@
 					</div>
 				</div>
 			</div>
-			<div><img class="slider__next-arrow" src="img/next-arrow-green.png"></div>
+			<div>
+				<img class="slider__next-arrow-green" src="img/next-arrow-green.png">
+			</div>
 		</div>
 	</div>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
-	<script src="js/slick.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
