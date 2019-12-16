@@ -29,10 +29,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-transition: all .75s ease;
-  transition: all .75s ease; }
+  -webkit-transition: opacity .75s ease;
+  transition: opacity .75s ease; }
 
 .case {
   display: -webkit-box;
@@ -50,8 +53,8 @@ body {
   max-width: 562px;
   width: calc(50% - 30px);
   color: #fff;
-  -webkit-transition: all .75s ease;
-  transition: all .75s ease;
+  -webkit-transition: opacity .75s ease;
+  transition: opacity .75s ease;
   opacity: 1; }
   .case:hover {
     opacity: 0.9; }
