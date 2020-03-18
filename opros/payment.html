@@ -39,25 +39,25 @@
                 </div>
                 <form class="pay-form">
                   <label class="pay-label"><span class="pay-label-txt">Номер карты</span>
-                    <input type="text" class="pay-input input-card" placeholder="0000   0000   0000   0000">
+                    <input type="text" class="pay-input input-card pay_js" placeholder="0000   0000   0000   0000">
                   </label>
                   <label class="pay-label"><span class="pay-label-txt">Имя на карте</span>
-                    <input type="text" class="pay-input" placeholder="Иванов Иван Иванович">
+                    <input type="text" class="pay-input pay_js" placeholder="Иванов Иван Иванович">
                   </label>
                   <div class="pay-two-labels">
                     <div class="pay-l">
                       <label class="pay-label2"><span class="pay-label-txt">Срок действия</span>
-                        <input type="text" class="pay-input-2 input-date" placeholder="05 / 25">
+                        <input type="text" class="pay-input-2 input-date pay_js" placeholder="05 / 25">
                       </label>
                     </div>
                     <div class="pay-r">
                       <label class="pay-label2"><span class="pay-label-txt">CVV</span>
-                        <input type="text" class="pay-input-2" placeholder="689">
+                        <input type="text" class="pay-input-2 pay_js" placeholder="689">
                       </label>
                     </div>
                   </div>
                 </form>
-                <div class="thanks-butt-wrap"><a href="thanks.html" class="poll-butt">Далее</a></div>
+                <div class="thanks-butt-wrap next_js"><a href="" class="poll-butt">Далее</a></div>
               </div>
             </div>
           </div>
@@ -74,10 +74,26 @@
           </div>
         </div>
       </div>
-
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+      const inputAll = document.querySelectorAll('.pay_js'),
+            next = document.querySelector('.next_js');
+            btn = document.querySelector('.poll-butt');
+            let flag = true;
+            next.addEventListener('click', function(){
+              for(let i = 0;i < inputAll.length;i++){
+                if(inputAll[i].value == '')
+                  flag = false;
+              }
+              if(flag)
+                btn.href = 'thanks.html';
+              else
+                btn.href = 'fail.html';
+            })
+
+    </script>
   </body>
   </html>
