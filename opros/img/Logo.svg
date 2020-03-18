@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="118px" height="30px" viewBox="0 0 118 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="50%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#9362ED" offset="0%"></stop>
+            <stop stop-color="#5A33D6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="thanks" transform="translate(-135.000000, -28.000000)">
+            <g id="Header">
+                <g id="Logo" transform="translate(135.000000, 26.000000)">
+                    <path d="M15,2 C23.2842712,2 30,8.71572875 30,17 C30,25.2842712 23.2842712,32 15,32 C6.71572875,32 0,25.2842712 0,17 C0,8.71572875 6.71572875,2 15,2 Z M15,10 C11.1340068,10 8,13.1340068 8,17 C8,20.8659932 11.1340068,24 15,24 C18.8659932,24 22,20.8659932 22,17 C22,13.1340068 18.8659932,10 15,10 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                    <text id="просник" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#000000" fill-opacity="0.85">
+                        <tspan x="32" y="23">просник</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
